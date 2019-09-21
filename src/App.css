@@ -1,3 +1,8 @@
+body{
+  background: url("background.jpg");
+  background-size: cover;
+  font-family: "Comic Sans MS";
+}
 .App {
   text-align: center;
 }
@@ -28,10 +33,11 @@
   font-size: 26pt;
   box-shadow: 0 4px 8px 0 yellowgreen;
   margin: 1em;
-  background: orange;
+  background: none;
   border-radius: 15px;
   color: rgb(73, 33, 33);
   user-select: none;
+  font-style: bold;
  }
 
  .button {
@@ -39,6 +45,7 @@
   text-align: center;
   width: 6em;
   font-size: 26pt;
+  font-family: "Comic Sans MS";
   box-shadow: 0 4px 8px 0 rgb(250, 174, 244);
   margin: 1em;
   background: rgb(124, 209, 235);
@@ -52,6 +59,11 @@
   font-size: 26pt
  }
  #word {
-   font-size: 28pt
+   font-size: 28pt;
+ }
+
+ #title {
+   font-size: 48pt;
+   text-shadow: rgb(255, 252, 81) 0.1em 0.1em 0.1em;
  }
 

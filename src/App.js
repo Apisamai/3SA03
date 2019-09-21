@@ -3,6 +3,7 @@ import './App.css';
 import WordCard from './WordCard';
 
 const word = ["Hello", "Love", "Art"];
+
 var word_random = word[Math.floor(Math.random() * word.length)];
 
    class App extends Component {
@@ -11,13 +12,12 @@ var word_random = word[Math.floor(Math.random() * word.length)];
     }
     render() {
     return (
-      <div className="App">
-        <WordCard value={word_random}/>
-        <h3 id = 'word'><br></br></h3>
-
-        <button id="newgame" className="button" onClick={this.newgame}>New Game</button>
-      </div>
-  
+        <div className="App">
+          <h1 id = 'title'>Game Logic</h1>        
+          <WordCard value={word_random}/>
+          <h3 id = 'word'><br></br></h3>
+          <button id="newgame" className="button" onClick={this.newgame}>New Game</button>
+        </div>
     );
     }
    }
