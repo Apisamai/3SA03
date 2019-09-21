@@ -6,14 +6,18 @@ const word = ["Hello", "Love", "Art"];
 var word_random = word[Math.floor(Math.random() * word.length)];
 
    class App extends Component {
+    newgame = () => {
+      window.location.reload(false);
+    }
     render() {
     return (
       <div className="App">
         <WordCard value={word_random}/>
-        <h2 id = 'word'></h2>
-        {/* <h3 id = 'score'>Score :</h3>  */}
+        <h3 id = 'word'><br></br></h3>
+
+        <button id="newgame" className="button" onClick={this.newgame}>New Game</button>
       </div>
-   
+  
     );
     }
    }

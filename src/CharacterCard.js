@@ -12,9 +12,6 @@ export default class CharacterCard extends Component {
                 this.props.activationHandler(this.props.value)
                 this.setState({active: true})
             }
-            else{
-                this.setState({active: false})
-            }
         }
         render(){
             let className = `card ${this.state.active ? 'activeCard': ''}`
@@ -27,7 +24,7 @@ export default class CharacterCard extends Component {
 
         componentDidUpdate(prevProps){
             if(prevProps.attempt != this.props.attempt){
-                this.setState({active: false})
+                setTimeout(() => this.setState({active: false}), 500)
             }
         }
    }

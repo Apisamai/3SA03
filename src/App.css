@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #4e82eb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,18 +25,33 @@
   display: inline-block;
   text-align: center;
   width: 3em;
-  font-size: 2em;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-size: 26pt;
+  box-shadow: 0 4px 8px 0 yellowgreen;
   margin: 1em;
+  background: orange;
+  border-radius: 15px;
+  color: rgb(73, 33, 33);
   user-select: none;
  }
 
- .activeCard {
-  color: red;
-  background: pink;
+ .button {
+  display: inline-block;
+  text-align: center;
+  width: 6em;
+  font-size: 26pt;
+  box-shadow: 0 4px 8px 0 rgb(250, 174, 244);
+  margin: 1em;
+  background: rgb(124, 209, 235);
+  border-radius: 15px;
+  color: rgb(68, 18, 18);
  }
- 
- /* #score {
-   color: blue;
-   font-size: 36px
- } */
+
+ .activeCard {
+  color:rgb(68, 22, 22);
+  background: palevioletred;
+  font-size: 26pt
+ }
+ #word {
+   font-size: 28pt
+ }
+
