@@ -25,6 +25,9 @@ export default class CharacterCard extends Component {
         componentDidUpdate(prevProps){
             if(prevProps.attempt != this.props.attempt){
                 setTimeout(() => this.setState({active: false}), 500)
+            if(this.props.attempt > 5){
+                document.getElementById('word').innerHTML = "Game Over" 
+            }
             }
         }
    }
