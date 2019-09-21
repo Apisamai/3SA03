@@ -28,11 +28,13 @@ export default class WordCard extends Component {
                     this.setState({guess: [], completed: true})
                     document.getElementById('word').innerHTML = "You win!!"
                     document.getElementById('word').style.color = "orange"
+                    
                 }else{
                     this.setState({guess: [], attempt: this.state.attempt + 1})
-                    console.log(`You Lost!! ${this.state.guess.join('').toString()} ${this.state.chars.join('').toString()}`)
+                    console.log(`${this.state.guess.join('').toString()} ${this.state.chars.join('').toString()}`)
                     document.getElementById('word').innerHTML = "You Lose!!"
                     document.getElementById('word').style.color = "green"
+                    setTimeout(() => window.location.reload(), 1500);
                 }
             }
         }
