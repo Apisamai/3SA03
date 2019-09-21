@@ -8,7 +8,9 @@ const word = "Hello";
     return (
       <div className="App">
         <WordCard value="Hello"/>
+        <h2 id = 'word'></h2>
       </div>
+   
     );
     }
    }
