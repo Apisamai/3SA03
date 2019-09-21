@@ -34,6 +34,8 @@ export default class WordCard extends Component {
                     console.log(`${this.state.guess.join('').toString()} ${this.state.chars.join('').toString()}`)
                     document.getElementById('word').innerHTML = "You Lose!!"
                     document.getElementById('word').style.color = "green"
+                    document.getElementById('H2').innerHTML = `Attempt : ${this.state.attempt} `
+      
                 }
             }
         
