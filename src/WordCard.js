@@ -19,10 +19,12 @@ export default class WordCard extends Component {
             super(props)
             this.state = prepareStateFromWord(this.props.value) 
         }
+
         activationHandler = (c) => {
             console.log(`${c} has been activated. ${this.state.chars} ${this.state.guess}`)
             let guess = [...this.state.guess, c.toUpperCase()]
             this.setState({guess})
+        if(this.state.attempt < 6){
             if(guess.length == this.state.chars.length){
                 if(guess.join('').toString() == this.state.chars.join('').toString()){
                     this.setState({guess: [], completed: true})
@@ -34,15 +36,15 @@ export default class WordCard extends Component {
                     document.getElementById('word').innerHTML = "Wrong"
                     document.getElementById('word').style.color = "green"
                     document.getElementById('H2').innerHTML = `Attempt : ${this.state.attempt} `
-      
+                    
                 }
             }
-        
+        }
     }
     render() {
     return (
         <div>
-                { Array.from(this.props.value).map((c, i) => <CharacterCard value={c} key={i} activationHandler={this.activationHandler} {...this.state}/>) }
+                { Array.from(this.props.value).map((c, i) => <CharacterCard value={c} key={i} activationHandler={this.activationHandler} isSurrenderConfirm={this.props.isSurrenderConfirm} {...this.state}/>) }
         </div>
             );
     }

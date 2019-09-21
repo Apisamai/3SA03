@@ -47,8 +47,7 @@ body{
   font-size: 26pt;
   font-family: "Comic Sans MS";
   box-shadow: 0 4px 8px 0 rgb(250, 174, 244);
-  margin: 1em;
-  background: rgb(124, 209, 235);
+  background: none;
   border-radius: 15px;
   color: rgb(68, 18, 18);
  }
@@ -69,4 +68,9 @@ body{
 
  #H2 {
   font-size: 26pt;
+ }
+
+ #Answer {
+   color: red;
+   font-size: 18pt;
  }
