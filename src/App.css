@@ -53,10 +53,10 @@ body{
   color: rgb(68, 18, 18);
  }
 
- .hint_button{
+ #hint_button{
   display: inline-block;
   text-align: center;
-  width: 6em;
+  width: 8em;
   margin: 1em;
   font-size: 26pt;
   font-family: "Comic Sans MS";

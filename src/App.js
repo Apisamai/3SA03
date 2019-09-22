@@ -35,11 +35,11 @@ var word_random = word[Math.floor(Math.random() * word.length)];
         <div className="App">
           <h1 id = 'title'><img src={img}></img> Game Logic <img src={img2}></img></h1>        
           <WordCard value={word_random} {...this.state} getHint={this.getHint} />
-          <h2 id = "H2">Attempt : 0</h2>
+          <h2 id = "H2">You can play 5 times. : 0</h2>
           <h3 id = 'word'><br></br></h3>
           <h4 id = "hint"></h4>
           <button id="new_game" className="button" onClick={this.new_game}>New Game</button>
-          <button id="hint_button" className="button" onClick={this.Hint}>Hint</button>
+          <button id="hint_button" className="button" onClick={this.Hint}>Hint 3 times</button>
           <h5 id="Answer"></h5>
         </div>
     );
