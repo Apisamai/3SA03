@@ -18,6 +18,7 @@ export default class WordCard extends Component {
         constructor(props){
             super(props)
             this.state = prepareStateFromWord(this.props.value) 
+       
         }
 
         activationHandler = (c) => {
@@ -42,6 +43,14 @@ export default class WordCard extends Component {
         }
     }
     render() {
+        console.log(this.props.hint)
+        if(this.props.isHint){
+            if(this.props.hint > 0 && this.props.hint <= 3){
+                this.props.getHint(this.state.chars[this.props.hint-1])
+            }
+        }
+        
+            
     return (
         <div>
                 { Array.from(this.props.value).map((c, i) => <CharacterCard value={c} key={i} activationHandler={this.activationHandler} {...this.state}/>) }
