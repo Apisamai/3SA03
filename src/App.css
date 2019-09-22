@@ -48,6 +48,20 @@ body{
   font-family: "Comic Sans MS";
   box-shadow: 0 4px 8px 0 rgb(250, 174, 244);
   background: none;
+  margin: 1em;
+  border-radius: 15px;
+  color: rgb(68, 18, 18);
+ }
+
+ .hint_button{
+  display: inline-block;
+  text-align: center;
+  width: 6em;
+  margin: 1em;
+  font-size: 26pt;
+  font-family: "Comic Sans MS";
+  box-shadow: 0 4px 8px 0 rgb(250, 174, 244);
+  background: none;
   border-radius: 15px;
   color: rgb(68, 18, 18);
  }
